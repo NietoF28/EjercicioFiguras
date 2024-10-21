@@ -13,6 +13,7 @@ public class Rectangulo extends Figura{
         System.out.println("Ingrese la altura de su rectangulo");
         setAltura(teclado.nextDouble());
         System.out.println("EL area de su rectangulo es: "+base*altura);
+
     }
 
     @Override

@@ -10,6 +10,7 @@ public class Main {
     Triangulo triangulo1 = new Triangulo();
     Triangulo triangulo2 = new Triangulo();
     Triangulo triangulo3 = new Triangulo();
+
     Rectangulo rectangulo1 = new Rectangulo();
     Rectangulo rectangulo2 = new Rectangulo();
     Rectangulo rectangulo3 = new Rectangulo();
@@ -24,9 +25,7 @@ public class Main {
     ArrayList<Triangulo> lsttriangulos = new ArrayList<>();
     ArrayList<Circulo> lstcirculos = new ArrayList<>();
 
-    lstrectangulos.add(rectangulo1);
-    lstrectangulos.add(rectangulo2);
-    lstrectangulos.add(rectangulo3);
+
 
 
     while (continuar) {
@@ -215,7 +214,13 @@ public class Main {
           }
           break;
         case 4:
+          lstrectangulos.add(rectangulo1);
+          lstrectangulos.add(rectangulo2);
+          lstrectangulos.add(rectangulo3);
 
+          for (Rectangulo es : lstrectangulos) {
+            System.out.println(es);
+          }
 
           break;
 

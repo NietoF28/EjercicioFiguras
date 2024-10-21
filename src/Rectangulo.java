@@ -49,4 +49,5 @@ public class Rectangulo extends Figura{
     public void setAltura(double altura) {
         this.altura = altura;
     }
+
 }

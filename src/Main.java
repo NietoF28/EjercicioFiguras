@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
@@ -16,30 +17,74 @@ public class Main {
       Circulo circulo2 = new Circulo();
       Circulo circulo3 = new Circulo();
 
+      ArrayList<Rectangulo> lstrectangulos = new ArrayList<>();
+      ArrayList<Triangulo> lsttriangulos = new ArrayList<>();
+      ArrayList<Circulo> lstcirculos = new ArrayList<>();
 
           while (continuar) {
-
+            System.out.println(" //FIGURAS\\ ");
             System.out.println("1) Rectangulo");
             System.out.println("2) Triangulo");
             System.out.println("3) Circulo");
-            System.out.println("4) Salir");
+            System.out.println("4) Mostrar Rectangulos");
+            System.out.println("5) Salir");
             opc = scanner.nextInt();
 
              switch (opc){
 
               case 1:
-                System.out.println("_OPERACIONES_");
-                System.out.println("1) Area");
-                System.out.println("2) Perimetro");
+                System.out.println("__");
+                System.out.println("1) Rectangulo 1");
+                System.out.println("2) Rectangulo 2");
+                System.out.println("3) Rectangulo 3");
                 opc = scanner.nextInt();
                    switch (opc) {
-                    case 1:
-                  rectangulo1.calcularArea();
-                    break;
+                     case 1:
+                       System.out.println("_OPERACIONES_");
+                       System.out.println("1) Area");
+                       System.out.println("2) Perimetro");
+                       opc = scanner.nextInt();
 
-                    case 2:
-                  rectangulo1.calcularPerimetro();
-                    break;
+                     switch (opc) {
+                       case 1:
+                         rectangulo1.calcularArea();
+                         break;
+                       case 2:
+                         rectangulo1.calcularPerimetro();
+                        break;}
+
+                       case 2:
+                         System.out.println("_OPERACIONES_");
+                         System.out.println("1) Area");
+                         System.out.println("2) Perimetro");
+                         opc = scanner.nextInt();
+
+                         switch (opc) {
+                           case 1:
+                             rectangulo2.calcularArea();
+                             break;
+                           case 2:
+                             rectangulo2.calcularPerimetro();
+                             break;
+
+                         }
+                     case 3:
+                       System.out.println("_OPERACIONES_");
+                       System.out.println("1) Area");
+                       System.out.println("2) Perimetro");
+                       opc = scanner.nextInt();
+
+                       switch (opc) {
+                         case 1:
+                           rectangulo3.calcularArea();
+                           break;
+                         case 2:
+                           rectangulo3.calcularPerimetro();
+                           break;
+
+                       }
+
+
                 }
 
                 break;
@@ -76,8 +121,11 @@ public class Main {
                     break;
                 }
                 break;
-
                case 4:
+
+                 break;
+
+               case 5:
                  continuar = false;
                  System.out.println("Gracias por usar el sistema.");
                  break;
